@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      padding: 30px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .search-bar {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .search-bar input[type="text"] {
+      padding: 10px;
+      width: 60%;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    figure {
+      background: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-size: 0.95em;
+    }
+
+    .rating {
+      text-align: center;
+      font-size: 1.5em;
+      margin: 20px 0;
+    }
+
+    .favorites-table {
+      max-width: 600px;
+      margin: auto;
+      border-collapse: collapse;
+      margin-top: 40px;
+    }
+
+    .favorites-table th,
+    .favorites-table td {
+      border: 1px solid #ccc;
+      padding: 12px 15px;
+      text-align: left;
+    }
+
+    .favorites-table th {
+      background-color: #eaeaea;
+    }
+
+    .home-link {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .home-link a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .home-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body style="background-color: rgb(13, 122, 122);">
+
+  <h1>My Gallery</h1>
+
+  <!-- Bonus: Search Bar -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search the gallery...">
+  </div>
+
+  <!-- Required: Image Grid -->
+  <div class="gallery">
+    <figure>
+      <img src="istockphoto-1350764326-612x612.jpg" alt="Image 1">
+      <figcaption>The workday  begins with a cup of coffee and a blank page</figcaption>
+    </figure>
+    <figure>
+      <img src="istockphoto-1179905464-612x612.jpg" alt="Image 2">
+      <figcaption>Motivated work behind a bright monitor</figcaption>
+    </figure>
+    <figure>
+      <img src="istockphoto-1453725676-612x612.jpg" alt="Image 3">
+      <figcaption>A focused mind, a dark page, and a light from the codes that make up the world</figcaption>
+    </figure>
+    <figure>
+      <img src="istockphoto-627916698-612x612.jpg" alt="Image 4">
+      <figcaption>The silence of the room, and a world of algorithms</figcaption>
+    </figure>
+  </div>
+
+  <!-- Bonus: Star Rating -->
+  <div class="rating">
+    Rate My Site: ★★★★☆
+  </div>
+
+  <!-- Bonus: Favorites Table -->
+  <table class="favorites-table">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Favorite</th>
+      </tr>
+    </thead>
+    <hr>
+    <tbody>
+      <tr>
+        <td>Song</td>
+        <td>Pop</td>
+      </tr>
+      <tr>
+        <td>Book</td>
+        <td>Motivational</td>
+      </tr>
+      <tr>
+        <td>Food</td>
+        <td>Chicken and Pizza 🍕</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Required: Home Link -->
+  <div class="home-link">
+    <p><a href="index.html">← Back to Home</a></p>
+  </div>
+
+</body>
+</html>
